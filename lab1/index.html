@@ -3,18 +3,6 @@
  <meta charset="UTF-8"> 
 </head><body>
 
-1) adres email
-2) kod pocztowy
-3) numer nip (z kreskami)
-4) numer dowodu
-5) adres ipv4
-6) strona www
-7a) ścieżka litera dysku:\katalog systemu (windows, winnt, win, dos, msdos)\katalog podrzędny (np. C:\windows\temp lub d:\msdos). 
-7b) to samo, co w 7a, ale ma pozwalać na użycie zarówno dużych, jak i małych liter (Windows,windows,WinDowS)
-8) ścieżka do pliku w katalogu /etc/ (np. /etc/passwd, /etc/hosts, itp)
-9) adres ipv6
-10) Numer telefonu
-
 <br><form>
 1)<input type="email"name="email"  id="email" placeholder="adres email"><br>
 2)<input type="text" id="kodpocztowy" pattern="^\d{2}-\d{3}$" size="30" placeholder="adres pocztowy:xx-xxx"><br>
@@ -24,8 +12,8 @@
 6)<input type="url" pattern="https?://.+" id="weburl" placeholder="adres www https://"><br>
 7a)
 7b)
-8)<input type="url" pattern="/etc/.+" id="pliki3" placeholder="/etc/..."><br>
-9)<input type="text" pattern="^([0-9a-fA-F]{4}:){7}[0-9a-fA-F]{4}$" placeholder="ip ver.6 długi format"/><br>
+8)
+9)<input type="text" pattern="((^|:)([0-9a-fA-F]{0,4})){1,8}$" placeholder="ip ver.6"/><br>
 10)<input type="tel" name="telefon"  id="telefon" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" placeholder="Format: xxx xxx xxx"/><br>
 
 
