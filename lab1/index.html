@@ -15,14 +15,19 @@
 9) adres ipv6
 10) Numer telefonu
 
-<br>
-1)<input type="email" id="email"  size="50" placeholder="email: adres@domena."><br>
+<br><form>
+1)<input type="email"name="email"  id="email" placeholder="adres email"><br>
 2)<input type="text" id="kodpocztowy" pattern="^\d{2}-\d{3}$" size="30" placeholder="adres pocztowy:xx-xxx"><br>
 3)<input type="text" pattern="^((\d{3}[- ]\d{3}[- ]\d{2}[- ]\d{2})|(\d{3}[- ]\d{2}[- ]\d{2}[- ]\d{3}))$" placeholder="nr nip"><br>
 4)
 5)<input type="text" pattern="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}" id="IPadress" placeholder="IP adres Ver.4"><br>
-6)<input type="url" pattern="https?://.+" id="weburl" placeholder="adres www: https:">
-7
+6)<input type="url" pattern="https?://.+" id="weburl" placeholder="adres www https://"><br>
+7a)
+7b)
+8)<input type="url" pattern="/etc/.+" id="pliki3" placeholder="/etc/..."><br>
+9)<input type="text" pattern="^([0-9a-fA-F]{4}:){7}[0-9a-fA-F]{4}$" placeholder="ip ver.6 długi format"/><br>
+10)<input type="tel" name="telefon"  id="telefon" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" placeholder="Format: xxx xxx xxx"/><br>
 
-<input type="submit">
+
+<input type="submit"></form>
 </body></html>
