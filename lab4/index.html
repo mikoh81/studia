@@ -1,9 +1,6 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset = utf-8" />
-  </head>
-  <body>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset = utf-8" /></head>
+<body>
     <form id="addForm" onsubmit="return add(event)">
       <label for="name">Name:</label>
       <input name="name" type="text" />
@@ -29,3 +26,14 @@
       <input id="submitBtn" type="submit" value="Add entry" />
     </form>
     <br />
+	
+ <div id="tableDiv"></div>
+ 
+ <script type="text/javascript">
+      //prefixes of implementation that we want to test
+      window.indexedDB =
+        window.indexedDB ||
+        window.mozIndexedDB ||
+        window.webkitIndexedDB ||
+        window.msIndexedDB;
+
